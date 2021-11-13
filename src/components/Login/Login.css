@@ -1,0 +1,100 @@
+.login {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  width: min(90%, 40rem);
+  background-color: #fff;
+  margin-inline: auto;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form h1 {
+  font-size: 3rem;
+  color: rgb(63, 63, 63);
+}
+
+.form h5 {
+  color: rgb(190, 190, 190);
+  padding: 1.5rem 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.field label {
+  font-size: 1.1rem;
+  color: rgb(63, 63, 63);
+  margin-bottom: 0.5em;
+}
+.field input {
+  padding: 0.8rem 0.8rem;
+  font-size: 1.2rem;
+}
+
+.rememberMe {
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.rememberMe__text {
+  margin-left: 0.5rem;
+  user-select: none;
+}
+
+#check:checked ~ .custom-checkbox {
+  border: none;
+  background-color: rgba(37, 99, 235, 1);
+}
+
+#check:checked ~ .custom-checkbox::after {
+  opacity: 1;
+}
+
+.custom-checkbox {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  border-radius: 3.09091px;
+  position: relative;
+  border: 1.5px solid #c9cbe2;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 5px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top: 40%;
+  left: 50%;
+  transition: all 0.2s ease-in-out;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+}
+
+.forgotPassword {
+  float: right;
+}
+
+.formBtn {
+  background-color: rgba(37, 99, 235, 1);
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 900;
+  margin-top: 2em;
+}
