@@ -1,7 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Modal.css";
 const Modal = ({ show, setShow }) => {
   const modalRef = useRef(null);
+
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    coverNote: "",
+  });
+
+  const handleChange = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   useEffect(() => {
     if (show) {
       document.body.style.overflow = "hidden";
@@ -14,12 +28,6 @@ const Modal = ({ show, setShow }) => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    console.log(formData);
-    alert(JSON.stringify(formData));
-  };
   return (
     <div
       style={{ display: `${show ? "flex" : "none"}` }}
@@ -27,20 +35,39 @@ const Modal = ({ show, setShow }) => {
       onClick={closeModal}
       className="modal"
     >
-      <form className="modalForm" onSubmit={handleSubmit}>
+      <form className="modalForm">
         <div className="modalForm__inputField">
           <label htmlFor="name">Name</label>
-          <input name="name" type="text" id="name" />
+          <input
+            value={values.name}
+            onChange={handleChange}
+            name="name"
+            type="text"
+            id="name"
+          />
         </div>
 
         <div className="modalForm__inputField">
           <label htmlFor="email">Email</label>
-          <input name="email" type="email" id="email" />
+          <input
+            value={values.email}
+            onChange={handleChange}
+            name="email"
+            type="email"
+            id="email"
+          />
         </div>
 
         <div className="modalForm__inputField">
           <label htmlFor="Covern">Cover note</label>
-          <textarea name="covern" rows={8} id="Covern" />
+          <textarea
+            onChange={handleChange}
+            style={{ resize: "none" }}
+            type="text"
+            name="covern"
+            rows={8}
+            id="Covern"
+          />
         </div>
 
         <div className="modalForm__inputField">

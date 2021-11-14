@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
@@ -16,7 +17,9 @@ const Nav = () => {
     <div className="nav">
       <div className="nav-container">
         <div className="navLogo__container">
-          <img className="navLogo" src="/images/logo.png" alt="" />
+          <Link to="/home">
+            <img className="navLogo" src="/images/logo.png" alt="" />
+          </Link>
         </div>
 
         <div className="navQuote">
