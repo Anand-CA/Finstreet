@@ -1,0 +1,22 @@
+.detailBody {
+  margin: 2rem auto;
+  width: min(90%, 70rem);
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 0.7rem;
+  padding: 1.6em;
+}
+
+.applyBtn {
+  background-color: #2563eb;
+  border: none;
+  display: block;
+  margin: 2em auto;
+  text-align: center;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}

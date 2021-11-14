@@ -9,7 +9,6 @@ const Login = () => {
   const [user, setUser] = useState(localStorage.getItem("user"));
 
   //   check user exist
-
   useEffect(() => {
     if (user) {
       navigate("/home");

@@ -1,0 +1,87 @@
+.nav {
+  background-color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  width: min(100%, 75rem);
+  margin-inline: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.hamburger {
+  position: absolute;
+  right: 0.8rem;
+}
+
+.hamburger svg {
+  height: 1.65rem;
+  display: none;
+}
+
+.navLogo {
+  height: 3rem;
+  object-fit: contain;
+}
+
+.navBtn {
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  padding: 1em;
+  background-color: #fff;
+  border-bottom: 4px solid #3b82f6;
+  border-radius: 5px;
+}
+
+.navBtn span {
+  color: gray;
+  font-size: 1.2em;
+}
+
+.navBtn svg {
+  font-size: 1.2em;
+  color: #3b82f6;
+  height: 1.1rem;
+}
+
+.navBtn * {
+  margin: 0.2em;
+}
+
+@media (max-width: 830px) {
+  .navQuote {
+    font-size: 0.8em;
+  }
+  .navLogo {
+    height: 2.3rem;
+  }
+  .navBtn {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 664px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
