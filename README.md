@@ -1,3 +1,19 @@
+## About
+A job app built using react and node.js for learning purpose 📚.
+## External Library 🚀
+* [React HTML Parser](https://www.npmjs.com/package/react-html-parser)
+* [Axios](https://www.npmjs.com/package/axios)
+* [React router dom](https://www.npmjs.com/package/react-router-dom)
+* [React redux](https://redux-toolkit.js.org/)
+
+## Backend repo 👇
+https://github.com/densec/jobs-api-nodejs
+
+## How to run the app ?
+* clone the repo 
+* do 👉 yarn or 👉 npm install to install the dependencies
+* do 👉 yarn start or 👉 npm start to run the app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
